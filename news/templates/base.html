@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <title>Advanced Newspaper App</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="{% url 'home'}">Advanced newspaper App</a>
+            </h1>
+        </div>
+    </header>
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 
 {% for article in object_list %}
 <div class="post-entry">
-    <h2><a> {{article.title}} </a></h2>
+    <h2><a href="{% url 'article_detail' article.pk %}"> {{article.title}} </a></h2>
     <p> {{article.body}} </p>
 </div>
 
